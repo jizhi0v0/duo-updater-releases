@@ -17,9 +17,9 @@
 - Package: notarized macOS app bundle
 - Install: download `DuoUpdater-0.1.1-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
 
-SHA-256: `467f167a1db2baa09827086a38560042847db937335d9f266c135b9ab52c54db`
+SHA-256: `8065da45353bf60157ec313219dc0012c6723ebbaef03adcc857e9b5e396948c`
 ]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.1/DuoUpdater-0.1.1-macos.zip" length="2937943" type="application/octet-stream"/>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.1/DuoUpdater-0.1.1-macos.zip" length="2938139" type="application/octet-stream" sparkle:edSignature="Ln7s7610yHpN6nivW+RdC/D3CTWa2i+6k3C+M/9v3u2gDeFp8GqYTuf/YIzoZ3aV2CkMigjc5kQ6wfhjVDy/Cw=="/>
         </item>
     </channel>
 </rss>
