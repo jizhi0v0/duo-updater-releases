@@ -3,6 +3,25 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.1.5</title>
+            <pubDate>Mon, 22 Jun 2026 16:58:32 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.5</link>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.5
+
+- Released: 2026-06-22
+- Build: 6
+- Package: notarized macOS app bundle
+- Install: download `DuoUpdater-0.1.5-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
+
+SHA-256: `3515cead4c9c1a6e477e2a9b212c110a7121ce39fb4f2e32520faae415e628a6`
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.5/DuoUpdater-0.1.5-macos.zip" length="3006577" type="application/octet-stream" sparkle:edSignature="FeJJZikBnIEH7QN+yGEHBfsvE2GgnuX0ZbJ/B6Xcf3fwvFLVz/0Wv2UBwaR83CvSl5EQCiBbSSxpwOZJIj6EBQ=="/>
+        </item>
+        <item>
             <title>0.1.4</title>
             <pubDate>Mon, 22 Jun 2026 10:47:57 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.4</link>
@@ -55,25 +74,6 @@ Reliability and safety fixes.
 - Large release notes render without hitching, and the changelog rail no longer re-measures on every interaction.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.3/DuoUpdater-0.1.3-macos.zip" length="3401982" type="application/octet-stream" sparkle:edSignature="A4J9hS9HPgywjy2uKWG7xemkRmDvA+jT/1nWWYR4Xi6BJ74npD86jaGBpNYc2OK+Wtrk7HSzeb9CwXOIC1iEAg=="/>
-        </item>
-        <item>
-            <title>0.1.2</title>
-            <pubDate>Sat, 20 Jun 2026 21:50:36 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.2</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.2
-
-- Released: 2026-06-20
-- Build: 3
-- Package: notarized macOS app bundle
-- Install: download `DuoUpdater-0.1.2-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
-
-SHA-256: `60e59ce6d78dc9e06d22dfacf724adad14e3c3500b22bdf474a5732c5a37d92c`
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.2/DuoUpdater-0.1.2-macos.zip" length="3395755" type="application/octet-stream" sparkle:edSignature="ujy9HaemgOSB6HK3QXHjDdo6/L05wFFY+1bvfHPvhkJ1ujrVVA4s7g2/5IV3R6QQ9aiUKuYLOrQ3j+X0BkTBCQ=="/>
         </item>
     </channel>
 </rss>
