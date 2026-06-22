@@ -3,6 +3,30 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.1.4</title>
+            <pubDate>Mon, 22 Jun 2026 10:47:57 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.4</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.4
+
+Fewer missed updates, more one-click installs, and a smoother update flow.
+
+**Updates**
+- Fixed updates being missed for apps whose download feed is cached very aggressively by the vendor (Fork was a clear case — a new version could go undetected indefinitely). Feeds are now always revalidated, so new releases show up right away.
+- More apps can now be updated with one click. Apps that ship an unsigned Sparkle feed (like Fork) are now installed directly — verified by the downloaded app's Developer ID signature and matching team, the same safety check used for direct-download and GitHub apps.
+
+**After updating**
+- A running app is now restarted for you automatically once its update is installed, so a single "Update" click finishes the job — no separate "Restart" step. The app is asked to quit normally, so unsaved-work prompts still appear and anything that won't quit simply keeps its "Restart" button. You can turn this off in Settings.
+
+**Workbench**
+- Right-click any app for quick "Open" and "Changelog" actions — "Changelog" jumps straight to that app's release notes in the workbench.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.4/DuoUpdater-0.1.4-macos.zip" length="3407670" type="application/octet-stream" sparkle:edSignature="jAlNio1QEj9AOwh/uhIMSHlYrTW7oYsiF7OVPAN5mL8071M2HEEBb3N1EsXdf4Xz492EzFoJjfoOZapWg6ceDw=="/>
+        </item>
+        <item>
             <title>0.1.3</title>
             <pubDate>Sat, 20 Jun 2026 22:34:20 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.3</link>
@@ -50,25 +74,6 @@ Reliability and safety fixes.
 SHA-256: `60e59ce6d78dc9e06d22dfacf724adad14e3c3500b22bdf474a5732c5a37d92c`
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.2/DuoUpdater-0.1.2-macos.zip" length="3395755" type="application/octet-stream" sparkle:edSignature="ujy9HaemgOSB6HK3QXHjDdo6/L05wFFY+1bvfHPvhkJ1ujrVVA4s7g2/5IV3R6QQ9aiUKuYLOrQ3j+X0BkTBCQ=="/>
-        </item>
-        <item>
-            <title>0.1.1</title>
-            <pubDate>Sat, 20 Jun 2026 19:20:18 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.1</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.1
-
-- Released: 2026-06-20
-- Build: 2
-- Package: notarized macOS app bundle
-- Install: download `DuoUpdater-0.1.1-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
-
-SHA-256: `8065da45353bf60157ec313219dc0012c6723ebbaef03adcc857e9b5e396948c`
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.1/DuoUpdater-0.1.1-macos.zip" length="2938139" type="application/octet-stream" sparkle:edSignature="Ln7s7610yHpN6nivW+RdC/D3CTWa2i+6k3C+M/9v3u2gDeFp8GqYTuf/YIzoZ3aV2CkMigjc5kQ6wfhjVDy/Cw=="/>
         </item>
     </channel>
 </rss>
