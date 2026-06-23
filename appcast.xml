@@ -3,6 +3,20 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.1.8</title>
+            <pubDate>Tue, 23 Jun 2026 14:17:28 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.8</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.8
+
+**Fixes a hang (app not responding).** Opening the menu or window while a background update check was in flight could, in a timing-dependent race, send the refresh logic into an infinite loop and freeze the app (requiring a force-quit). The single-flight refresh now clears its in-flight marker correctly, so the coalesced follow-up can never recurse. This bug was latent since 0.1.4; if you ever saw DuoUpdater stop responding, this is why.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.8/DuoUpdater-0.1.8-macos.zip" length="3019364" type="application/octet-stream" sparkle:edSignature="E5H9WZ3Yk8DzncwFWhuhSMOOPr7BW8Hupmmt5kFH6lolGwpzPaR2PcQjox8CdEyx6M/TAH2QpDbjQcy2AYT/AQ=="/>
+        </item>
+        <item>
             <title>0.1.7</title>
             <pubDate>Tue, 23 Jun 2026 14:03:49 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.7</link>
@@ -31,25 +45,6 @@
 **Snappier update checks.** Resolving your GitHub token now happens off the main thread with a short timeout, so a slow `gh` CLI can't stall a refresh.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.6/DuoUpdater-0.1.6-macos.zip" length="3019144" type="application/octet-stream" sparkle:edSignature="/1Tp0iBus0YFsuk/7Iw3Veah5m352Kl599Tq/fF1DewjvpyJ5qpm1i+KvLmvQRCFBC7Ztmo61IPZ7O7jL/61AQ=="/>
-        </item>
-        <item>
-            <title>0.1.5</title>
-            <pubDate>Mon, 22 Jun 2026 16:58:32 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.5</link>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.5
-
-- Released: 2026-06-22
-- Build: 6
-- Package: notarized macOS app bundle
-- Install: download `DuoUpdater-0.1.5-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
-
-SHA-256: `3515cead4c9c1a6e477e2a9b212c110a7121ce39fb4f2e32520faae415e628a6`
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.5/DuoUpdater-0.1.5-macos.zip" length="3006577" type="application/octet-stream" sparkle:edSignature="FeJJZikBnIEH7QN+yGEHBfsvE2GgnuX0ZbJ/B6Xcf3fwvFLVz/0Wv2UBwaR83CvSl5EQCiBbSSxpwOZJIj6EBQ=="/>
         </item>
     </channel>
 </rss>
