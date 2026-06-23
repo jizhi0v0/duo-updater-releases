@@ -3,6 +3,22 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.1.6</title>
+            <pubDate>Tue, 23 Jun 2026 11:19:33 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.6</link>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.6
+
+**Resilient downloads.** Large installer downloads now survive a dropped connection. If a transfer is cut off mid-stream — a flaky network, a VPN/proxy that resets long downloads — DuoUpdater retries and resumes from where it left off (HTTP range requests) instead of restarting from zero or giving up with "The network connection was lost." This fixes repeated update failures on big payloads (e.g. Cursor, Codex).
+
+**Snappier update checks.** Resolving your GitHub token now happens off the main thread with a short timeout, so a slow `gh` CLI can't stall a refresh.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.6/DuoUpdater-0.1.6-macos.zip" length="3019144" type="application/octet-stream" sparkle:edSignature="/1Tp0iBus0YFsuk/7Iw3Veah5m352Kl599Tq/fF1DewjvpyJ5qpm1i+KvLmvQRCFBC7Ztmo61IPZ7O7jL/61AQ=="/>
+        </item>
+        <item>
             <title>0.1.5</title>
             <pubDate>Mon, 22 Jun 2026 16:58:32 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.5</link>
@@ -44,36 +60,6 @@ Fewer missed updates, more one-click installs, and a smoother update flow.
 - Right-click any app for quick "Open" and "Changelog" actions — "Changelog" jumps straight to that app's release notes in the workbench.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.4/DuoUpdater-0.1.4-macos.zip" length="3407670" type="application/octet-stream" sparkle:edSignature="jAlNio1QEj9AOwh/uhIMSHlYrTW7oYsiF7OVPAN5mL8071M2HEEBb3N1EsXdf4Xz492EzFoJjfoOZapWg6ceDw=="/>
-        </item>
-        <item>
-            <title>0.1.3</title>
-            <pubDate>Sat, 20 Jun 2026 22:34:20 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.3</link>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.3
-
-Reliability and safety fixes.
-
-**Updates**
-- App Store updates now run one at a time, so triggering several Mac App Store updates at once no longer lets two automations fight over the single App Store window.
-- TestFlight badges no longer occasionally stay missing when you open the app during a background check.
-- Homebrew formula release notes no longer double-fetch on a fast click (less chance of hitting GitHub's rate limit).
-- A completed install can no longer briefly "stick" on a stale progress state.
-
-**Install safety**
-- Rollback now refuses to restore a backup whose code signature has been corrupted or tampered with, instead of swapping the broken bundle over your working app.
-- Recovering from an interrupted update now verifies the bundle's signature before restoring it.
-- For a disk image that contains several installers from one vendor, package updates now pick the one that matches the app being updated.
-
-**Workbench window**
-- Opening the window (or the welcome/setup screen) now reliably brings it to the front when it was already open behind another window.
-- Opening a second window no longer steals focus unnecessarily.
-- Large release notes render without hitching, and the changelog rail no longer re-measures on every interaction.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.3/DuoUpdater-0.1.3-macos.zip" length="3401982" type="application/octet-stream" sparkle:edSignature="A4J9hS9HPgywjy2uKWG7xemkRmDvA+jT/1nWWYR4Xi6BJ74npD86jaGBpNYc2OK+Wtrk7HSzeb9CwXOIC1iEAg=="/>
         </item>
     </channel>
 </rss>
