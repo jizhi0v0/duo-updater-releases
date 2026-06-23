@@ -3,6 +3,20 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.1.7</title>
+            <pubDate>Tue, 23 Jun 2026 14:03:49 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.7</link>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.7
+
+**iPhone/iPad apps on Mac now redirect to the App Store.** Wrapped iOS apps running on Apple Silicon (e.g. Aqara Home) can only be updated by the App Store app itself — the `mas` command-line tool has no Mac-store entry for them and fails with "No apps found for ADAM ID …". These apps no longer show a one-click Update that errors out; instead the row offers an **App Store** button that opens the app's page, where the real Update lives. They're also excluded from Install-All so a batch can't stall on them.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.7/DuoUpdater-0.1.7-macos.zip" length="3020318" type="application/octet-stream" sparkle:edSignature="x9nqAfqRquY80GKmxQ0xoX2zpIHvtei05dsA8JUtcyPgjB+cxFWFeR8OGUPZkOyrtxdyxzFFHl5r47UzQxLqDA=="/>
+        </item>
+        <item>
             <title>0.1.6</title>
             <pubDate>Tue, 23 Jun 2026 11:19:33 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.6</link>
@@ -36,30 +50,6 @@
 SHA-256: `3515cead4c9c1a6e477e2a9b212c110a7121ce39fb4f2e32520faae415e628a6`
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.5/DuoUpdater-0.1.5-macos.zip" length="3006577" type="application/octet-stream" sparkle:edSignature="FeJJZikBnIEH7QN+yGEHBfsvE2GgnuX0ZbJ/B6Xcf3fwvFLVz/0Wv2UBwaR83CvSl5EQCiBbSSxpwOZJIj6EBQ=="/>
-        </item>
-        <item>
-            <title>0.1.4</title>
-            <pubDate>Mon, 22 Jun 2026 10:47:57 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.4</link>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.4
-
-Fewer missed updates, more one-click installs, and a smoother update flow.
-
-**Updates**
-- Fixed updates being missed for apps whose download feed is cached very aggressively by the vendor (Fork was a clear case — a new version could go undetected indefinitely). Feeds are now always revalidated, so new releases show up right away.
-- More apps can now be updated with one click. Apps that ship an unsigned Sparkle feed (like Fork) are now installed directly — verified by the downloaded app's Developer ID signature and matching team, the same safety check used for direct-download and GitHub apps.
-
-**After updating**
-- A running app is now restarted for you automatically once its update is installed, so a single "Update" click finishes the job — no separate "Restart" step. The app is asked to quit normally, so unsaved-work prompts still appear and anything that won't quit simply keeps its "Restart" button. You can turn this off in Settings.
-
-**Workbench**
-- Right-click any app for quick "Open" and "Changelog" actions — "Changelog" jumps straight to that app's release notes in the workbench.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.4/DuoUpdater-0.1.4-macos.zip" length="3407670" type="application/octet-stream" sparkle:edSignature="jAlNio1QEj9AOwh/uhIMSHlYrTW7oYsiF7OVPAN5mL8071M2HEEBb3N1EsXdf4Xz492EzFoJjfoOZapWg6ceDw=="/>
         </item>
     </channel>
 </rss>
