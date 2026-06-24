@@ -3,6 +3,22 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.1.9</title>
+            <pubDate>Wed, 24 Jun 2026 13:44:26 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.9</link>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.9
+
+**Apps that update themselves now clear correctly.** If an app updated through its own updater (for example, Chrome via "About Chrome") while DuoUpdater was busy installing other updates, it could keep showing a stale "update available" row long after it was already current. DuoUpdater now re-checks the moment the installs finish, so the row clears right away instead of lingering.
+
+**"Update All" shows the whole queue.** Every app in an "Update All" run now shows a "Queued" state immediately, instead of leaving the ones further down the list looking idle with a clickable Update button. Clicking Update on an app that's already queued can no longer start a second install of it.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.9/DuoUpdater-0.1.9-macos.zip" length="3021841" type="application/octet-stream" sparkle:edSignature="R8LKTdWgpByi2lomdsN3sJPV0H1Z6OPmvUkViK1Ma5/RuaLskvX/nbxJHNSzwYLn7Nk1kUl9ugGzwPs6KY+LCQ=="/>
+        </item>
+        <item>
             <title>0.1.8</title>
             <pubDate>Tue, 23 Jun 2026 14:17:28 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.8</link>
@@ -29,22 +45,6 @@
 **iPhone/iPad apps on Mac now redirect to the App Store.** Wrapped iOS apps running on Apple Silicon (e.g. Aqara Home) can only be updated by the App Store app itself — the `mas` command-line tool has no Mac-store entry for them and fails with "No apps found for ADAM ID …". These apps no longer show a one-click Update that errors out; instead the row offers an **App Store** button that opens the app's page, where the real Update lives. They're also excluded from Install-All so a batch can't stall on them.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.7/DuoUpdater-0.1.7-macos.zip" length="3020318" type="application/octet-stream" sparkle:edSignature="x9nqAfqRquY80GKmxQ0xoX2zpIHvtei05dsA8JUtcyPgjB+cxFWFeR8OGUPZkOyrtxdyxzFFHl5r47UzQxLqDA=="/>
-        </item>
-        <item>
-            <title>0.1.6</title>
-            <pubDate>Tue, 23 Jun 2026 11:19:33 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.6</link>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.6
-
-**Resilient downloads.** Large installer downloads now survive a dropped connection. If a transfer is cut off mid-stream — a flaky network, a VPN/proxy that resets long downloads — DuoUpdater retries and resumes from where it left off (HTTP range requests) instead of restarting from zero or giving up with "The network connection was lost." This fixes repeated update failures on big payloads (e.g. Cursor, Codex).
-
-**Snappier update checks.** Resolving your GitHub token now happens off the main thread with a short timeout, so a slow `gh` CLI can't stall a refresh.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.6/DuoUpdater-0.1.6-macos.zip" length="3019144" type="application/octet-stream" sparkle:edSignature="/1Tp0iBus0YFsuk/7Iw3Veah5m352Kl599Tq/fF1DewjvpyJ5qpm1i+KvLmvQRCFBC7Ztmo61IPZ7O7jL/61AQ=="/>
         </item>
     </channel>
 </rss>
