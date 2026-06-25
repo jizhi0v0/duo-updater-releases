@@ -3,6 +3,26 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Thu, 25 Jun 2026 11:19:11 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.2.0</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## 0.2.0
+
+**Passwordless App Store updates.** Updating Mac App Store apps no longer interrupts you for your password every time. DuoUpdater now installs a small, signed privileged helper (one-time approval) and bundles `mas`, so App Store updates apply directly in the background.
+
+**Cleaner "Restart to finish" lines.** When an app updates itself on disk while it's still running, the pending-restart line now shows the real marketing version on both sides — e.g. `1.8.x (build) → 1.9.0 (build)` instead of a bare build number on the left.
+
+**Fixes**
+
+- Fixed a build issue on Xcode 26.5 (changelog extractor name collision).
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.2.0/DuoUpdater-0.2.0-macos.zip" length="9909836" type="application/octet-stream" sparkle:edSignature="V/c+24tr+WnTFlOlx28dCTFGKqivO0OPLkEwDaJ7otvGcrTAC62B/QNVCB2z8SbBBl4zxN+g5RYEM80xGEHQCg=="/>
+        </item>
+        <item>
             <title>0.1.9</title>
             <pubDate>Wed, 24 Jun 2026 13:44:26 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.9</link>
@@ -31,20 +51,6 @@
 **Fixes a hang (app not responding).** Opening the menu or window while a background update check was in flight could, in a timing-dependent race, send the refresh logic into an infinite loop and freeze the app (requiring a force-quit). The single-flight refresh now clears its in-flight marker correctly, so the coalesced follow-up can never recurse. This bug was latent since 0.1.4; if you ever saw DuoUpdater stop responding, this is why.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.8/DuoUpdater-0.1.8-macos.zip" length="3019364" type="application/octet-stream" sparkle:edSignature="E5H9WZ3Yk8DzncwFWhuhSMOOPr7BW8Hupmmt5kFH6lolGwpzPaR2PcQjox8CdEyx6M/TAH2QpDbjQcy2AYT/AQ=="/>
-        </item>
-        <item>
-            <title>0.1.7</title>
-            <pubDate>Tue, 23 Jun 2026 14:03:49 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.7</link>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.7
-
-**iPhone/iPad apps on Mac now redirect to the App Store.** Wrapped iOS apps running on Apple Silicon (e.g. Aqara Home) can only be updated by the App Store app itself — the `mas` command-line tool has no Mac-store entry for them and fails with "No apps found for ADAM ID …". These apps no longer show a one-click Update that errors out; instead the row offers an **App Store** button that opens the app's page, where the real Update lives. They're also excluded from Install-All so a batch can't stall on them.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.7/DuoUpdater-0.1.7-macos.zip" length="3020318" type="application/octet-stream" sparkle:edSignature="x9nqAfqRquY80GKmxQ0xoX2zpIHvtei05dsA8JUtcyPgjB+cxFWFeR8OGUPZkOyrtxdyxzFFHl5r47UzQxLqDA=="/>
         </item>
     </channel>
 </rss>
