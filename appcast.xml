@@ -10,14 +10,15 @@
             <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.3.0
+            <description sparkle:format="markdown"><![CDATA[**See when your apps actually ship.** DuoUpdater now keeps a Release Log: a running timeline of every release the apps you track put out, each stamped with its publish time. Open it from the clock icon at the bottom of the popover.
 
-- Released: 2026-06-27
-- Build: 12
-- Package: notarized macOS app bundle
-- Install: download `DuoUpdater-0.3.0-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
+**Release-habit heatmap.** A new Patterns view charts releases by weekday and hour, so you can see when an app tends to ship — pick any single app for its own pattern and version history, or view all of them together. History is backfilled from each app's update feed, so the heatmap is useful right away instead of starting empty.
 
-SHA-256: `ed262a4a67b2fdb98d81029509430392041bd2d45b9c462fdd6efb43b516e7cd`
+**Honest about what it can't time.** Apps that publish an exact release date (Sparkle, GitHub, Alcove) are timed to the minute. Apps that only expose a version number get a clearly-marked "≈" estimated window — bounded by when DuoUpdater last saw the old version and first saw the new one — and never skew the heatmap.
+
+**Fixes**
+
+- ToDesk update checks no longer report an older grayscale build; they now track the version actually offered for download.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.0/DuoUpdater-0.3.0-macos.zip" length="10054182" type="application/octet-stream" sparkle:edSignature="QdblyOite//FjSP6INiXxhZGVgiIqxrNMiRNqOKKShwTHdYUhfAIsIkpQ5I4xFKlHHDEfPwRhNvsOMpwsSjGBw=="/>
         </item>
