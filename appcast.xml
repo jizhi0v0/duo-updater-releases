@@ -3,6 +3,25 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.0</title>
+            <pubDate>Sat, 27 Jun 2026 19:08:55 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.0</link>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.3.0
+
+- Released: 2026-06-27
+- Build: 12
+- Package: notarized macOS app bundle
+- Install: download `DuoUpdater-0.3.0-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
+
+SHA-256: `ed262a4a67b2fdb98d81029509430392041bd2d45b9c462fdd6efb43b516e7cd`
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.0/DuoUpdater-0.3.0-macos.zip" length="10054182" type="application/octet-stream" sparkle:edSignature="QdblyOite//FjSP6INiXxhZGVgiIqxrNMiRNqOKKShwTHdYUhfAIsIkpQ5I4xFKlHHDEfPwRhNvsOMpwsSjGBw=="/>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Thu, 25 Jun 2026 11:19:11 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.2.0</link>
@@ -37,20 +56,6 @@
 **"Update All" shows the whole queue.** Every app in an "Update All" run now shows a "Queued" state immediately, instead of leaving the ones further down the list looking idle with a clickable Update button. Clicking Update on an app that's already queued can no longer start a second install of it.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.9/DuoUpdater-0.1.9-macos.zip" length="3021841" type="application/octet-stream" sparkle:edSignature="R8LKTdWgpByi2lomdsN3sJPV0H1Z6OPmvUkViK1Ma5/RuaLskvX/nbxJHNSzwYLn7Nk1kUl9ugGzwPs6KY+LCQ=="/>
-        </item>
-        <item>
-            <title>0.1.8</title>
-            <pubDate>Tue, 23 Jun 2026 14:17:28 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.8</link>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.8
-
-**Fixes a hang (app not responding).** Opening the menu or window while a background update check was in flight could, in a timing-dependent race, send the refresh logic into an infinite loop and freeze the app (requiring a force-quit). The single-flight refresh now clears its in-flight marker correctly, so the coalesced follow-up can never recurse. This bug was latent since 0.1.4; if you ever saw DuoUpdater stop responding, this is why.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.8/DuoUpdater-0.1.8-macos.zip" length="3019364" type="application/octet-stream" sparkle:edSignature="E5H9WZ3Yk8DzncwFWhuhSMOOPr7BW8Hupmmt5kFH6lolGwpzPaR2PcQjox8CdEyx6M/TAH2QpDbjQcy2AYT/AQ=="/>
         </item>
     </channel>
 </rss>
