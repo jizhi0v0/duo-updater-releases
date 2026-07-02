@@ -3,6 +3,20 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.1</title>
+            <pubDate>Thu, 02 Jul 2026 10:22:19 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.1</link>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**Fixes**
+
+- When you restart an app yourself after it updated in the background, the "Relaunch" badge now clears the moment the app comes back up — instead of lingering until the next background check.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.1/DuoUpdater-0.3.1-macos.zip" length="10055958" type="application/octet-stream" sparkle:edSignature="eLBgZKzMQXhjxObrYZeqN7IBIlyHh4A5lncgHftsswLfj1JqFwzmpQED57bJn2w+5/g5aIGgzSAd6Ks/bE8hBw=="/>
+        </item>
+        <item>
             <title>0.3.0</title>
             <pubDate>Sat, 27 Jun 2026 19:08:55 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.0</link>
@@ -41,22 +55,6 @@
 - Fixed a build issue on Xcode 26.5 (changelog extractor name collision).
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.2.0/DuoUpdater-0.2.0-macos.zip" length="9909836" type="application/octet-stream" sparkle:edSignature="V/c+24tr+WnTFlOlx28dCTFGKqivO0OPLkEwDaJ7otvGcrTAC62B/QNVCB2z8SbBBl4zxN+g5RYEM80xGEHQCg=="/>
-        </item>
-        <item>
-            <title>0.1.9</title>
-            <pubDate>Wed, 24 Jun 2026 13:44:26 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.1.9</link>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.1.9
-
-**Apps that update themselves now clear correctly.** If an app updated through its own updater (for example, Chrome via "About Chrome") while DuoUpdater was busy installing other updates, it could keep showing a stale "update available" row long after it was already current. DuoUpdater now re-checks the moment the installs finish, so the row clears right away instead of lingering.
-
-**"Update All" shows the whole queue.** Every app in an "Update All" run now shows a "Queued" state immediately, instead of leaving the ones further down the list looking idle with a clickable Update button. Clicking Update on an app that's already queued can no longer start a second install of it.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.1.9/DuoUpdater-0.1.9-macos.zip" length="3021841" type="application/octet-stream" sparkle:edSignature="R8LKTdWgpByi2lomdsN3sJPV0H1Z6OPmvUkViK1Ma5/RuaLskvX/nbxJHNSzwYLn7Nk1kUl9ugGzwPs6KY+LCQ=="/>
         </item>
     </channel>
 </rss>
