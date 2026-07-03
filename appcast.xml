@@ -3,6 +3,18 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.3</title>
+            <pubDate>Fri, 03 Jul 2026 23:45:39 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.3</link>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.3.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**One-click updates for four more apps.** HBuilderX, JetBrains Toolbox, and Microsoft Edge's Beta and Dev channels now update in place with a single click, instead of only telling you that an update exists. HBuilderX also now reads its version straight from DCloud's own release feed, so it picks up new builds sooner and more reliably.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.3/DuoUpdater-0.3.3-macos.zip" length="10055704" type="application/octet-stream" sparkle:edSignature="D6w8zULwInXaElVcpVlK/kGcot/dVPxjzITShMtGzpo0yrKgQwQpMOYO2ALOicl8gHq9FQvhnJonZUzlRFy2Aw=="/>
+        </item>
+        <item>
             <title>0.3.2</title>
             <pubDate>Thu, 02 Jul 2026 10:28:50 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.2</link>
@@ -32,26 +44,6 @@
 - When you restart an app yourself after it updated in the background, the "Relaunch" badge now clears the moment the app comes back up — instead of lingering until the next background check.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.1/DuoUpdater-0.3.1-macos.zip" length="10055958" type="application/octet-stream" sparkle:edSignature="eLBgZKzMQXhjxObrYZeqN7IBIlyHh4A5lncgHftsswLfj1JqFwzmpQED57bJn2w+5/g5aIGgzSAd6Ks/bE8hBw=="/>
-        </item>
-        <item>
-            <title>0.3.0</title>
-            <pubDate>Sat, 27 Jun 2026 19:08:55 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.0</link>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**See when your apps actually ship.** DuoUpdater now keeps a Release Log: a running timeline of every release the apps you track put out, each stamped with its publish time. Open it from the clock icon at the bottom of the popover.
-
-**Release-habit heatmap.** A new Patterns view charts releases by weekday and hour, so you can see when an app tends to ship — pick any single app for its own pattern and version history, or view all of them together. History is backfilled from each app's update feed, so the heatmap is useful right away instead of starting empty.
-
-**Honest about what it can't time.** Apps that publish an exact release date (Sparkle, GitHub, Alcove) are timed to the minute. Apps that only expose a version number get a clearly-marked "≈" estimated window — bounded by when DuoUpdater last saw the old version and first saw the new one — and never skew the heatmap.
-
-**Fixes**
-
-- ToDesk update checks no longer report an older grayscale build; they now track the version actually offered for download.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.0/DuoUpdater-0.3.0-macos.zip" length="10054182" type="application/octet-stream" sparkle:edSignature="QdblyOite//FjSP6INiXxhZGVgiIqxrNMiRNqOKKShwTHdYUhfAIsIkpQ5I4xFKlHHDEfPwRhNvsOMpwsSjGBw=="/>
         </item>
     </channel>
 </rss>
