@@ -3,6 +3,18 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.5</title>
+            <pubDate>Sun, 12 Jul 2026 01:07:39 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.5</link>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>0.3.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**App Store updates no longer show a scary error for an app that's already up to date.** If the Mac App Store had quietly updated an app in the background — TestFlight, say — DuoUpdater's row could go stale and, on Update, try to reinstall the version that was already there. macOS's installer rejects that with an alarming red "The upgrade failed", even though nothing was actually wrong. DuoUpdater now confirms an App Store app really is behind before reinstalling, and treats a no-op reinstall as "already up to date" — settling the row quietly instead of showing an error.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.5/DuoUpdater-0.3.5-macos.zip" length="10073067" type="application/octet-stream" sparkle:edSignature="PKfw52r86dwaGB+xgAzkT7D8kxU3rdLQ357MYpmueu7exOXTRocat0f24BaVAK3mFmtCApU1GWZKbwkBtiitAw=="/>
+        </item>
+        <item>
             <title>0.3.3</title>
             <pubDate>Fri, 03 Jul 2026 23:45:39 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.3</link>
@@ -30,20 +42,6 @@
 - When you restart an app yourself after it updated in the background, the "Relaunch" badge now clears the moment the app comes back up — instead of lingering until the next background check.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.2/DuoUpdater-0.3.2-macos.zip" length="10055278" type="application/octet-stream" sparkle:edSignature="putcD/OWby+WAhotiBxJTcHh9/KVjSi/4r6Om2MKdecUXjUAqu1FrtKolKxnXwFQLclAUoMvapVcJ8SS7L0SCQ=="/>
-        </item>
-        <item>
-            <title>0.3.1</title>
-            <pubDate>Thu, 02 Jul 2026 10:22:19 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.1</link>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**Fixes**
-
-- When you restart an app yourself after it updated in the background, the "Relaunch" badge now clears the moment the app comes back up — instead of lingering until the next background check.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.1/DuoUpdater-0.3.1-macos.zip" length="10055958" type="application/octet-stream" sparkle:edSignature="eLBgZKzMQXhjxObrYZeqN7IBIlyHh4A5lncgHftsswLfj1JqFwzmpQED57bJn2w+5/g5aIGgzSAd6Ks/bE8hBw=="/>
         </item>
     </channel>
 </rss>
