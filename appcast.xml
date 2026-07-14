@@ -3,6 +3,22 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.6</title>
+            <pubDate>Tue, 14 Jul 2026 10:29:43 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.6</link>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.3.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**Update All now also relaunches apps that were only waiting on a restart.** If an app had already downloaded its update and just needed a relaunch to finish — Claude, for instance — clicking Update All used to skip it, leaving a stray "Relaunch" button behind. It now relaunches those too, in the same pass, whenever automatic restart-after-update is on.
+
+**App Store updates recover from a receipt hiccup instead of just failing.** Occasionally a Mac App Store update downloads in full but the very last install step trips over a "receipt" error — a transient App Store glitch that a second attempt usually clears. DuoUpdater now retries once automatically. If it still doesn't take, the row offers an "Open App Store" button to finish the update from the App Store's Updates page, instead of leaving a raw error on screen.
+
+**ToDesk update detection fixed.** A change to ToDesk's download page stopped DuoUpdater from reading its latest Mac version, so ToDesk updates went unnoticed. Detection now reads the version reliably again.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.6/DuoUpdater-0.3.6-macos.zip" length="10078691" type="application/octet-stream" sparkle:edSignature="ts9dPm6gii8f6Um4SuQ6raWZOTMwuRw1CPJluI3WtThjwuHl36xaPgBM8yvGgaDiFQ8j6C0x9zYJWxA1Z4RdCQ=="/>
+        </item>
+        <item>
             <title>0.3.5</title>
             <pubDate>Sun, 12 Jul 2026 01:07:39 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.5</link>
@@ -25,23 +41,6 @@
             <description sparkle:format="markdown"><![CDATA[**One-click updates for four more apps.** HBuilderX, JetBrains Toolbox, and Microsoft Edge's Beta and Dev channels now update in place with a single click, instead of only telling you that an update exists. HBuilderX also now reads its version straight from DCloud's own release feed, so it picks up new builds sooner and more reliably.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.3/DuoUpdater-0.3.3-macos.zip" length="10055704" type="application/octet-stream" sparkle:edSignature="D6w8zULwInXaElVcpVlK/kGcot/dVPxjzITShMtGzpo0yrKgQwQpMOYO2ALOicl8gHq9FQvhnJonZUzlRFy2Aw=="/>
-        </item>
-        <item>
-            <title>0.3.2</title>
-            <pubDate>Thu, 02 Jul 2026 10:28:50 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.2</link>
-            <sparkle:version>14</sparkle:version>
-            <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**Self-updating apps stay in their own lane.** A running app that ships its own Sparkle updater is now handed off to that updater — the same courtesy DuoUpdater already gave other self-updating apps — instead of being replaced underneath it, unless you've chosen "Always replace" in Settings.
-
-**Fixes**
-
-- The running-app dot and "Relaunch" badge no longer briefly lose track of an app right after an in-place update, when macOS keeps its process pinned to the temporary swap location for a moment.
-- When you restart an app yourself after it updated in the background, the "Relaunch" badge now clears the moment the app comes back up — instead of lingering until the next background check.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.2/DuoUpdater-0.3.2-macos.zip" length="10055278" type="application/octet-stream" sparkle:edSignature="putcD/OWby+WAhotiBxJTcHh9/KVjSi/4r6Om2MKdecUXjUAqu1FrtKolKxnXwFQLclAUoMvapVcJ8SS7L0SCQ=="/>
         </item>
     </channel>
 </rss>
