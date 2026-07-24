@@ -3,6 +3,18 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.8</title>
+            <pubDate>Fri, 24 Jul 2026 11:44:17 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.8</link>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>0.3.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**No more beachball while an app is relaunching.** Clicking Update on another app while one was being quit and relaunched could freeze DuoUpdater for a moment — the spinning rainbow cursor, an unresponsive window, a click that seemingly did nothing. Relaunching an app now happens in the background instead of on the interface, so the rest of the list stays live and clickable throughout. The same freeze could show up when opening an app from a row's right-click menu, or when handing an update off to an app's own updater; both are fixed too.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.8/DuoUpdater-0.3.8-macos.zip" length="10162235" type="application/octet-stream" sparkle:edSignature="KMPZQ+EjuKv33Vjactm7ozVLEPt5lXtnJksqTl9EPoXP7JIRrc2RfxiS9QDXHoz8Xz9otvl3GVc/aLHD/NJJAg=="/>
+        </item>
+        <item>
             <title>0.3.7</title>
             <pubDate>Wed, 22 Jul 2026 10:24:37 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.7</link>
@@ -33,18 +45,6 @@
 **ToDesk update detection fixed.** A change to ToDesk's download page stopped DuoUpdater from reading its latest Mac version, so ToDesk updates went unnoticed. Detection now reads the version reliably again.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.6/DuoUpdater-0.3.6-macos.zip" length="10078691" type="application/octet-stream" sparkle:edSignature="ts9dPm6gii8f6Um4SuQ6raWZOTMwuRw1CPJluI3WtThjwuHl36xaPgBM8yvGgaDiFQ8j6C0x9zYJWxA1Z4RdCQ=="/>
-        </item>
-        <item>
-            <title>0.3.5</title>
-            <pubDate>Sun, 12 Jul 2026 01:07:39 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.5</link>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.3.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**App Store updates no longer show a scary error for an app that's already up to date.** If the Mac App Store had quietly updated an app in the background — TestFlight, say — DuoUpdater's row could go stale and, on Update, try to reinstall the version that was already there. macOS's installer rejects that with an alarming red "The upgrade failed", even though nothing was actually wrong. DuoUpdater now confirms an App Store app really is behind before reinstalling, and treats a no-op reinstall as "already up to date" — settling the row quietly instead of showing an error.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.5/DuoUpdater-0.3.5-macos.zip" length="10073067" type="application/octet-stream" sparkle:edSignature="PKfw52r86dwaGB+xgAzkT7D8kxU3rdLQ357MYpmueu7exOXTRocat0f24BaVAK3mFmtCApU1GWZKbwkBtiitAw=="/>
         </item>
     </channel>
 </rss>
