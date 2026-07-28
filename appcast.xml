@@ -3,6 +3,18 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.9</title>
+            <pubDate>Tue, 28 Jul 2026 22:51:25 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.9</link>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>0.3.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**Uses less memory and does less work in the background.** This release is entirely under the hood — nothing about what DuoUpdater does has changed, only what it costs to leave running. Every update it downloaded used to leave a small amount of memory behind that was never reclaimed; harmless once, but it adds up over the weeks a menu-bar app tends to stay open. Separately, while the main window was open DuoUpdater re-read every installed app from disk every 15 seconds and started a system process each time to see what was running — that now happens every three minutes, since the filesystem watcher already notices a real change the moment it happens. Recording the release history after each check also used to save its file once per app rather than once per check, and release notes could be fetched more than once when the same page was already on its way in.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.9/DuoUpdater-0.3.9-macos.zip" length="10164012" type="application/octet-stream" sparkle:edSignature="pswXNPADma1ngobWHasRUOO4Ix4bRcr4qS+timUTsUiFSOd0kVvo+uKogI0s7S6a12PRtyuMsb/Lg5ekP7asAg=="/>
+        </item>
+        <item>
             <title>0.3.8</title>
             <pubDate>Fri, 24 Jul 2026 11:44:17 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.8</link>
@@ -29,22 +41,6 @@
 **Claude Desktop's release notes are now shown in DuoUpdater.** Update entries for Claude Desktop now include Anthropic's own per-version changelog instead of a generic notice.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.7/DuoUpdater-0.3.7-macos.zip" length="10157506" type="application/octet-stream" sparkle:edSignature="6XMGPuA4TIk1jz3aqe/pENDd0Cr3c34NiBZSs7OHQhKb9wBOlxHK7FqG975dTT+2XTE+dPdh9PODW1VOfnGbDw=="/>
-        </item>
-        <item>
-            <title>0.3.6</title>
-            <pubDate>Tue, 14 Jul 2026 10:29:43 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.6</link>
-            <sparkle:version>18</sparkle:version>
-            <sparkle:shortVersionString>0.3.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**Update All now also relaunches apps that were only waiting on a restart.** If an app had already downloaded its update and just needed a relaunch to finish — Claude, for instance — clicking Update All used to skip it, leaving a stray "Relaunch" button behind. It now relaunches those too, in the same pass, whenever automatic restart-after-update is on.
-
-**App Store updates recover from a receipt hiccup instead of just failing.** Occasionally a Mac App Store update downloads in full but the very last install step trips over a "receipt" error — a transient App Store glitch that a second attempt usually clears. DuoUpdater now retries once automatically. If it still doesn't take, the row offers an "Open App Store" button to finish the update from the App Store's Updates page, instead of leaving a raw error on screen.
-
-**ToDesk update detection fixed.** A change to ToDesk's download page stopped DuoUpdater from reading its latest Mac version, so ToDesk updates went unnoticed. Detection now reads the version reliably again.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.6/DuoUpdater-0.3.6-macos.zip" length="10078691" type="application/octet-stream" sparkle:edSignature="ts9dPm6gii8f6Um4SuQ6raWZOTMwuRw1CPJluI3WtThjwuHl36xaPgBM8yvGgaDiFQ8j6C0x9zYJWxA1Z4RdCQ=="/>
         </item>
     </channel>
 </rss>
