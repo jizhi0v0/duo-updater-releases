@@ -3,6 +3,20 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.10</title>
+            <pubDate>Mon, 03 Aug 2026 11:30:37 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.10</link>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.3.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**Fixes updates going unnoticed for days at a time.** DuoUpdater re-uses the answers it gets from each app's version feed so it isn't re-downloading the same file every few minutes. The problem was how long it trusted a stored answer: when a vendor's server doesn't say how long its reply stays valid, macOS guesses — and it guesses longer the longer that feed has gone unchanged. So the very feeds that had been quiet for a while were exactly the ones DuoUpdater stopped re-reading, and a new release could sit there for days with the app still reporting "up to date" and no error to show for it. Every version check now always asks the server whether anything changed, while still skipping the download when nothing has. OrbStack 2.2.2 is the release that surfaced this; the same blind spot applied to most apps checked directly against their vendor, including Chrome, Cursor, Claude, ChatGPT, Warp, Spotify, and Visual Studio Code.
+
+**Homebrew-managed apps no longer get stuck at the version they were on when DuoUpdater started.** The catalog DuoUpdater reads to learn the latest version of a Homebrew app was loaded once per launch and never refreshed, which is invisible if you quit the app daily and wrong if you leave it running for weeks. It now refreshes periodically. As a bonus, machines with no Homebrew casks installed no longer download that 5 MB catalog at all.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.10/DuoUpdater-0.3.10-macos.zip" length="10166250" type="application/octet-stream" sparkle:edSignature="JHDXkq+75hRkE/3uHO492oYsYeSt19SYZxCOl6RUdsenJ0qXBzM6Ho0EHyuCdrLeHXOG1fmAMIuW5q9w7/KnAg=="/>
+        </item>
+        <item>
             <title>0.3.9</title>
             <pubDate>Tue, 28 Jul 2026 22:51:25 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.9</link>
@@ -25,22 +39,6 @@
             <description sparkle:format="markdown"><![CDATA[**No more beachball while an app is relaunching.** Clicking Update on another app while one was being quit and relaunched could freeze DuoUpdater for a moment — the spinning rainbow cursor, an unresponsive window, a click that seemingly did nothing. Relaunching an app now happens in the background instead of on the interface, so the rest of the list stays live and clickable throughout. The same freeze could show up when opening an app from a row's right-click menu, or when handing an update off to an app's own updater; both are fixed too.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.8/DuoUpdater-0.3.8-macos.zip" length="10162235" type="application/octet-stream" sparkle:edSignature="KMPZQ+EjuKv33Vjactm7ozVLEPt5lXtnJksqTl9EPoXP7JIRrc2RfxiS9QDXHoz8Xz9otvl3GVc/aLHD/NJJAg=="/>
-        </item>
-        <item>
-            <title>0.3.7</title>
-            <pubDate>Wed, 22 Jul 2026 10:24:37 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.7</link>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:shortVersionString>0.3.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**Backups from uninstalled apps are now cleaned up automatically.** DuoUpdater keeps one backup of an app's previous version so an update can be rolled back. Backups for apps you've since uninstalled or moved were never reclaimed and could quietly pile up gigabytes of disk space over time. They're now deleted automatically during the regular update check. Settings shows how much space backups are currently using, with a toggle to turn off the automatic cleanup and a "Clean Up Now" button to run it on demand.
-
-**JetBrains Toolbox apps no longer show a stuck or incorrect "update available."** Version checks for Toolbox-managed apps (IntelliJ, Android Studio, Fleet, Air, and others) now always ask live rather than sometimes falling back to a local cache that could never actually report a new version — it fixes both a status that lingered after Toolbox had already installed the update, and one that never appeared in the first place.
-
-**Claude Desktop's release notes are now shown in DuoUpdater.** Update entries for Claude Desktop now include Anthropic's own per-version changelog instead of a generic notice.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.7/DuoUpdater-0.3.7-macos.zip" length="10157506" type="application/octet-stream" sparkle:edSignature="6XMGPuA4TIk1jz3aqe/pENDd0Cr3c34NiBZSs7OHQhKb9wBOlxHK7FqG975dTT+2XTE+dPdh9PODW1VOfnGbDw=="/>
         </item>
     </channel>
 </rss>
