@@ -3,6 +3,18 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.11</title>
+            <pubDate>Mon, 03 Aug 2026 11:41:21 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.11</link>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>0.3.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[**"Update All" now includes apps that install from a package.** A handful of apps — ToDesk and AweSun among them — ship their update as an installer package rather than something DuoUpdater can swap into place on its own. Those were quietly left out of "Update All" and had to be updated one row at a time; if such an app was the only other update pending, the button disappeared altogether rather than acting on just one. They're now part of the batch, and they run at the very end: everything that updates unattended finishes first, so nothing opens a window or asks for your admin password until the rest is already done. One caveat worth knowing — DuoUpdater can't tell when macOS's installer has finished, so if two package updates come up in the same batch, both installer windows open one after the other rather than waiting in line.
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.11/DuoUpdater-0.3.11-macos.zip" length="10166838" type="application/octet-stream" sparkle:edSignature="PbLNzzDamsDtdGZ1Purdl96xX41G7K3VRBslChT7G0U1FiP/lwVeDMtIMcjkt25wfKpUjm4riiB3dcQXxpbtDw=="/>
+        </item>
+        <item>
             <title>0.3.10</title>
             <pubDate>Mon, 03 Aug 2026 11:30:37 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.10</link>
@@ -27,18 +39,6 @@
             <description sparkle:format="markdown"><![CDATA[**Uses less memory and does less work in the background.** This release is entirely under the hood — nothing about what DuoUpdater does has changed, only what it costs to leave running. Every update it downloaded used to leave a small amount of memory behind that was never reclaimed; harmless once, but it adds up over the weeks a menu-bar app tends to stay open. Separately, while the main window was open DuoUpdater re-read every installed app from disk every 15 seconds and started a system process each time to see what was running — that now happens every three minutes, since the filesystem watcher already notices a real change the moment it happens. Recording the release history after each check also used to save its file once per app rather than once per check, and release notes could be fetched more than once when the same page was already on its way in.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.9/DuoUpdater-0.3.9-macos.zip" length="10164012" type="application/octet-stream" sparkle:edSignature="pswXNPADma1ngobWHasRUOO4Ix4bRcr4qS+timUTsUiFSOd0kVvo+uKogI0s7S6a12PRtyuMsb/Lg5ekP7asAg=="/>
-        </item>
-        <item>
-            <title>0.3.8</title>
-            <pubDate>Fri, 24 Jul 2026 11:44:17 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.8</link>
-            <sparkle:version>20</sparkle:version>
-            <sparkle:shortVersionString>0.3.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**No more beachball while an app is relaunching.** Clicking Update on another app while one was being quit and relaunched could freeze DuoUpdater for a moment — the spinning rainbow cursor, an unresponsive window, a click that seemingly did nothing. Relaunching an app now happens in the background instead of on the interface, so the rest of the list stays live and clickable throughout. The same freeze could show up when opening an app from a row's right-click menu, or when handing an update off to an app's own updater; both are fixed too.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.8/DuoUpdater-0.3.8-macos.zip" length="10162235" type="application/octet-stream" sparkle:edSignature="KMPZQ+EjuKv33Vjactm7ozVLEPt5lXtnJksqTl9EPoXP7JIRrc2RfxiS9QDXHoz8Xz9otvl3GVc/aLHD/NJJAg=="/>
         </item>
     </channel>
 </rss>
