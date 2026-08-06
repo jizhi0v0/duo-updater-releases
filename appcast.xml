@@ -3,6 +3,25 @@
     <channel>
         <title>DuoUpdater</title>
         <item>
+            <title>0.3.13</title>
+            <pubDate>Thu, 06 Aug 2026 13:52:25 +0800</pubDate>
+            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.13</link>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>0.3.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.3.13
+
+- Released: 2026-08-06
+- Build: 25
+- Package: notarized macOS app bundle
+- Install: download `DuoUpdater-0.3.13-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
+
+SHA-256: `6895144c0fc5d7adf6c9e3dfeda6340fa40b125be581dbc3a4f8e4e90a802c36`
+]]></description>
+            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.13/DuoUpdater-0.3.13-macos.zip" length="10191511" type="application/octet-stream" sparkle:edSignature="dMQuV2AxQNbCxP4wTcjJwZS8ukM0hAcN6PGJ7l+ONJ9rq7iCu8skCIyMeBJZ7uQYghKX3UqYgjyjCzGj8POMCw=="/>
+        </item>
+        <item>
             <title>0.3.12</title>
             <pubDate>Mon, 03 Aug 2026 13:56:49 +0800</pubDate>
             <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.12</link>
@@ -27,20 +46,6 @@
             <description sparkle:format="markdown"><![CDATA[**"Update All" now includes apps that install from a package.** A handful of apps — ToDesk and AweSun among them — ship their update as an installer package rather than something DuoUpdater can swap into place on its own. Those were quietly left out of "Update All" and had to be updated one row at a time; if such an app was the only other update pending, the button disappeared altogether rather than acting on just one. They're now part of the batch, and they run at the very end: everything that updates unattended finishes first, so nothing opens a window or asks for your admin password until the rest is already done. One caveat worth knowing — DuoUpdater can't tell when macOS's installer has finished, so if two package updates come up in the same batch, both installer windows open one after the other rather than waiting in line.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.11/DuoUpdater-0.3.11-macos.zip" length="10166838" type="application/octet-stream" sparkle:edSignature="PbLNzzDamsDtdGZ1Purdl96xX41G7K3VRBslChT7G0U1FiP/lwVeDMtIMcjkt25wfKpUjm4riiB3dcQXxpbtDw=="/>
-        </item>
-        <item>
-            <title>0.3.10</title>
-            <pubDate>Mon, 03 Aug 2026 11:30:37 +0800</pubDate>
-            <link>https://github.com/jizhi0v0/duo-updater-releases/releases/tag/v0.3.10</link>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.3.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[**Fixes updates going unnoticed for days at a time.** DuoUpdater re-uses the answers it gets from each app's version feed so it isn't re-downloading the same file every few minutes. The problem was how long it trusted a stored answer: when a vendor's server doesn't say how long its reply stays valid, macOS guesses — and it guesses longer the longer that feed has gone unchanged. So the very feeds that had been quiet for a while were exactly the ones DuoUpdater stopped re-reading, and a new release could sit there for days with the app still reporting "up to date" and no error to show for it. Every version check now always asks the server whether anything changed, while still skipping the download when nothing has. OrbStack 2.2.2 is the release that surfaced this; the same blind spot applied to most apps checked directly against their vendor, including Chrome, Cursor, Claude, ChatGPT, Warp, Spotify, and Visual Studio Code.
-
-**Homebrew-managed apps no longer get stuck at the version they were on when DuoUpdater started.** The catalog DuoUpdater reads to learn the latest version of a Homebrew app was loaded once per launch and never refreshed, which is invisible if you quit the app daily and wrong if you leave it running for weeks. It now refreshes periodically. As a bonus, machines with no Homebrew casks installed no longer download that 5 MB catalog at all.
-]]></description>
-            <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.10/DuoUpdater-0.3.10-macos.zip" length="10166250" type="application/octet-stream" sparkle:edSignature="JHDXkq+75hRkE/3uHO492oYsYeSt19SYZxCOl6RUdsenJ0qXBzM6Ho0EHyuCdrLeHXOG1fmAMIuW5q9w7/KnAg=="/>
         </item>
     </channel>
 </rss>
