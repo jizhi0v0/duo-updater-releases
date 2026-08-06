@@ -22,14 +22,7 @@
             <sparkle:shortVersionString>0.3.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## DuoUpdater 0.3.13
-
-- Released: 2026-08-06
-- Build: 25
-- Package: notarized macOS app bundle
-- Install: download `DuoUpdater-0.3.13-macos.zip`, unzip it, move `DuoUpdater.app` to `/Applications`, then open it once.
-
-SHA-256: `6895144c0fc5d7adf6c9e3dfeda6340fa40b125be581dbc3a4f8e4e90a802c36`
+            <description sparkle:format="markdown"><![CDATA[**Fixes AweSun's update failing with "the server returned HTTP 404".** DuoUpdater worked out where to download AweSun's installer by building the filename itself from the version number. Oray then renamed the file — the same 16.6.0 build, one letter's difference — and every attempt at the update hit a dead link. It now takes the filename straight from Oray's own download listing rather than guessing at it, so a future rename won't break it again.
 ]]></description>
             <enclosure url="https://github.com/jizhi0v0/duo-updater-releases/releases/download/v0.3.13/DuoUpdater-0.3.13-macos.zip" length="10191511" type="application/octet-stream" sparkle:edSignature="dMQuV2AxQNbCxP4wTcjJwZS8ukM0hAcN6PGJ7l+ONJ9rq7iCu8skCIyMeBJZ7uQYghKX3UqYgjyjCzGj8POMCw=="/>
         </item>
